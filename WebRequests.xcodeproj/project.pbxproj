@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D04D3D731E96F5A700CC2EEA /* SWPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04D3D721E96F5A700CC2EEA /* SWPerson.swift */; };
 		D09B328B1E96D39E007FB029 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09B328A1E96D39E007FB029 /* AppDelegate.swift */; };
 		D09B328D1E96D39E007FB029 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09B328C1E96D39E007FB029 /* ViewController.swift */; };
 		D09B32901E96D39E007FB029 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D09B328E1E96D39E007FB029 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D04D3D721E96F5A700CC2EEA /* SWPerson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWPerson.swift; sourceTree = "<group>"; };
 		D09B32871E96D39E007FB029 /* WebRequests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebRequests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D09B328A1E96D39E007FB029 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D09B328C1E96D39E007FB029 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				D09B32911E96D39E007FB029 /* Assets.xcassets */,
 				D09B32931E96D39E007FB029 /* LaunchScreen.storyboard */,
 				D09B32961E96D39E007FB029 /* Info.plist */,
+				D04D3D721E96F5A700CC2EEA /* SWPerson.swift */,
 			);
 			path = WebRequests;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			files = (
 				D09B328D1E96D39E007FB029 /* ViewController.swift in Sources */,
 				D09B328B1E96D39E007FB029 /* AppDelegate.swift in Sources */,
+				D04D3D731E96F5A700CC2EEA /* SWPerson.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,6 +507,7 @@
 				D09B32B11E96D39F007FB029 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D09B32B21E96D39F007FB029 /* Build configuration list for PBXNativeTarget "WebRequestsTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +516,7 @@
 				D09B32B41E96D39F007FB029 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D09B32B51E96D39F007FB029 /* Build configuration list for PBXNativeTarget "WebRequestsUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +525,7 @@
 				D09B32B71E96D39F007FB029 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
