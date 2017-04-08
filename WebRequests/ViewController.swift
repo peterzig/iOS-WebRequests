@@ -15,15 +15,15 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         let urlString = "http://swapi.co/api/people/1/"
-        let session = URLSession.shared // in Swift 2 it was NSURLSession
-        let url = URL(string:urlString)!
+        let session = NSURLSession.sharedSession() // in Swift 2 it was NSURLSession
+        let url = NSURL(string:urlString)!
         
-        session.dataTask(with: url, completionHandler: { (data: Data?,response: URLResponse?,error: NSError?) -> Void in
+        session.dataTaskWithURL(url) { (data: NSData?, response: NSURLResponse?, error: NSError?) -> Void in
             
             if let responseData = data {
                 
                 do{
-                    let json = try JSONSerialization.jsonObject(with: responseData, options: JSONSerialization.ReadingOptions.allowFragments)
+                    let json = try NSJSONSerialization.JSONObjectWithData(responseData, options: NSJSONReadingOptions.AllowFragments)
                     
                     if let dict = json as? Dictionary<String, AnyObject> {
                         if let name = dict["name"] as? String, let height = dict["height"] as? String, let birth = dict["birth_year"] as? String, let hair = dict["hair_color"] as? String {
@@ -38,11 +38,11 @@ class ViewController: UIViewController {
                         }
                     }
                     
-                    //print(json)
+                    print(json)
                 } catch {
                     print("Could not serialize")
                 }
             } //take data and convert to JSON
-            } as? (Data?, URLResponse?, Error?) -> Void)
+        }.resume()
     }
 }
